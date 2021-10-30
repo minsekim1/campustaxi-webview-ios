@@ -36,7 +36,8 @@ class ViewController: UIViewController,WKUIDelegate,WKNavigationDelegate{
        
         let url = URL(string: "http://www.campus-taxi.com/")
         let request = URLRequest(url: url!)
-        self.webView?.allowsBackForwardNavigationGestures = true  //뒤로가기 제스쳐 허용
+        // self.webView?.allowsBackForwardNavigationGestures = true  //뒤로가기 제스쳐 허용
+        webView.scrollView.bounces = false //상하 스크롤 제거
         webView.configuration.preferences.javaScriptEnabled = true  //자바스크립트 활성화
         webView.load(request)
 
@@ -62,5 +63,6 @@ class ViewController: UIViewController,WKUIDelegate,WKNavigationDelegate{
     func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
         if navigationAction.targetFrame == nil { webView.load(navigationAction.request) }
         return nil }
+    
 }
     
