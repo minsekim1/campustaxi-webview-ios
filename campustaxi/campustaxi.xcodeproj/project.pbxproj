@@ -16,6 +16,7 @@
 		069F751B272D4D4F007FCEAD /* campustaxiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069F751A272D4D4F007FCEAD /* campustaxiTests.swift */; };
 		069F7525272D4D4F007FCEAD /* campustaxiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069F7524272D4D4F007FCEAD /* campustaxiUITests.swift */; };
 		069F7527272D4D4F007FCEAD /* campustaxiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069F7526272D4D4F007FCEAD /* campustaxiUITestsLaunchTests.swift */; };
+		069F7534272D5718007FCEAD /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 069F7533272D5718007FCEAD /* splash.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		069F7520272D4D4F007FCEAD /* campustaxiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = campustaxiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		069F7524272D4D4F007FCEAD /* campustaxiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = campustaxiUITests.swift; sourceTree = "<group>"; };
 		069F7526272D4D4F007FCEAD /* campustaxiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = campustaxiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		069F7533272D5718007FCEAD /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		069F7502272D4D4C007FCEAD /* campustaxi */ = {
 			isa = PBXGroup;
 			children = (
+				069F7533272D5718007FCEAD /* splash.png */,
 				069F7503272D4D4C007FCEAD /* AppDelegate.swift */,
 				069F7505272D4D4C007FCEAD /* SceneDelegate.swift */,
 				069F7507272D4D4C007FCEAD /* ViewController.swift */,
@@ -231,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				069F7534272D5718007FCEAD /* splash.png in Resources */,
 				069F7510272D4D4F007FCEAD /* LaunchScreen.storyboard in Resources */,
 				069F750D272D4D4F007FCEAD /* Assets.xcassets in Resources */,
 				069F750B272D4D4C007FCEAD /* Main.storyboard in Resources */,
@@ -442,6 +446,7 @@
 				DEVELOPMENT_TEAM = U9VA2386V7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = campustaxi/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "캠퍼스택시";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -451,7 +456,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 4.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.campustaxi.campustaxi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -470,6 +475,7 @@
 				DEVELOPMENT_TEAM = U9VA2386V7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = campustaxi/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "캠퍼스택시";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -479,7 +485,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 4.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.campustaxi.campustaxi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
