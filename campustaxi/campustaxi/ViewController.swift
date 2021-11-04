@@ -33,8 +33,7 @@ class ViewController: UIViewController,WKUIDelegate,WKNavigationDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        let url = URL(string: "http://www.campus-taxi.com/")
+        let url = URL(string: "https://www.campus-taxi.com/")
         let request = URLRequest(url: url!)
         // self.webView?.allowsBackForwardNavigationGestures = true  //뒤로가기 제스쳐 허용
         webView.scrollView.bounces = false //상하 스크롤 제거
@@ -42,6 +41,7 @@ class ViewController: UIViewController,WKUIDelegate,WKNavigationDelegate{
         webView.load(request)
 
     }
+    
     
     override func didReceiveMemoryWarning() { super.didReceiveMemoryWarning() } //모달창 닫힐때 앱 종료현상 방지.
     

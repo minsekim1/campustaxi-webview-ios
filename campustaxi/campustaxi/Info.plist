@@ -7,10 +7,22 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>PHPhotoLibraryPreventAutomaticLimitedAccessAlert</key>
+	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>코스 내의 사진 촬영 기능을 사용하기 위해서 카메라를 권한이 필요합니다.
+	Permission is required for taking pictures in course creation.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>코스 내의 사진 선택 기능을 사용하기 위해서 카메라를 권한이 필요합니다.
+	The camera needs permission to use the photo selection function in the course.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>네이버 지도에서 내 위치를 확인하기 위해서 위치 권한이 필요합니다.
+	I need location authority to check my location on the Naver map.</string>
+	<key> NSPhotoLibraryAddUsageDescription</key>
+	<string>코스 내의 수정된 사진을 저장하기 위해서 권한이 필요합니다.
+	Permission is required to save the modified picture when creating the course.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
-		<key>UIApplicationSupportsMultipleScenes</key>
-		<false/>
 		<key>UISceneConfigurations</key>
 		<dict>
 			<key>UIWindowSceneSessionRoleApplication</key>
@@ -26,5 +38,7 @@
 			</array>
 		</dict>
 	</dict>
+	<key>UIApplicationSupportsMultipleScenes</key>
+	<false/>
 </dict>
 </plist>
