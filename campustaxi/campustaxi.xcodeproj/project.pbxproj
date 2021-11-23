@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		068525A2274D5AF50002A111 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 068525A1274D5AF50002A111 /* InfoPlist.strings */; };
 		069F7504272D4D4C007FCEAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069F7503272D4D4C007FCEAD /* AppDelegate.swift */; };
 		069F7506272D4D4C007FCEAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069F7505272D4D4C007FCEAD /* SceneDelegate.swift */; };
 		069F7508272D4D4C007FCEAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069F7507272D4D4C007FCEAD /* ViewController.swift */; };
@@ -37,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0685259F274D5AAA0002A111 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
+		068525A0274D5AAA0002A111 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		068525A1274D5AF50002A111 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		069F7500272D4D4C007FCEAD /* campustaxi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = campustaxi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		069F7503272D4D4C007FCEAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		069F7505272D4D4C007FCEAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +113,7 @@
 				069F750C272D4D4F007FCEAD /* Assets.xcassets */,
 				069F750E272D4D4F007FCEAD /* LaunchScreen.storyboard */,
 				069F7511272D4D4F007FCEAD /* Info.plist */,
+				068525A1274D5AF50002A111 /* InfoPlist.strings */,
 			);
 			path = campustaxi;
 			sourceTree = "<group>";
@@ -216,6 +221,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = 069F74F7272D4D4C007FCEAD;
 			productRefGroup = 069F7501272D4D4C007FCEAD /* Products */;
@@ -238,6 +244,7 @@
 				069F7510272D4D4F007FCEAD /* LaunchScreen.storyboard in Resources */,
 				069F750D272D4D4F007FCEAD /* Assets.xcassets in Resources */,
 				069F750B272D4D4C007FCEAD /* Main.storyboard in Resources */,
+				068525A2274D5AF50002A111 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +312,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				069F750A272D4D4C007FCEAD /* Base */,
+				0685259F274D5AAA0002A111 /* ko */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -313,6 +321,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				069F750F272D4D4F007FCEAD /* Base */,
+				068525A0274D5AAA0002A111 /* ko */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -324,6 +333,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -385,6 +395,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -442,14 +453,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = U9VA2386V7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = campustaxi/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "캠퍼스택시";
-				INFOPLIST_KEY_NSCameraUsageDescription = "카메라를 사용하기 위해서 필요합니다.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "코스 내의 사진 촬영 기능을 사용하기 위해서 카메라를 권한이 필요합니다.\n\tPermission is required for taking pictures in course creation.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "네이버 지도에서 내 위치를 확인하기 위해서 위치 권한이 필요합니다.\n\tI need location authority to check my location on the Naver map.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "사진을 보기위해 권한이 필요합니다.";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "사진 권한이 필요합니다.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "코스 내의 사진 선택 기능을 사용하기 위해서 카메라를 권한이 필요합니다.\n\tThe camera needs permission to use the photo selection function in the course.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -474,14 +485,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = U9VA2386V7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = campustaxi/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "캠퍼스택시";
-				INFOPLIST_KEY_NSCameraUsageDescription = "카메라를 사용하기 위해서 필요합니다.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "코스 내의 사진 촬영 기능을 사용하기 위해서 카메라를 권한이 필요합니다.\n\tPermission is required for taking pictures in course creation.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "네이버 지도에서 내 위치를 확인하기 위해서 위치 권한이 필요합니다.\n\tI need location authority to check my location on the Naver map.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "사진을 보기위해 권한이 필요합니다.";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "사진 권한이 필요합니다.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "코스 내의 사진 선택 기능을 사용하기 위해서 카메라를 권한이 필요합니다.\n\tThe camera needs permission to use the photo selection function in the course.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
