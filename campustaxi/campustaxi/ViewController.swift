@@ -35,7 +35,7 @@ class ViewController: UIViewController,WKUIDelegate,WKNavigationDelegate{
         webView.allowsBackForwardNavigationGestures = true
         // Do any additional setup after loading the view.
         // https://www.campus-taxi.com
-        let myURL = URL(string:"http://172.30.1.22:3000")
+        let myURL = URL(string:"https://www.campus-taxi.com")
         let myRequest = URLRequest(url: myURL!)
         
         webView.scrollView.minimumZoomScale = 1.0
